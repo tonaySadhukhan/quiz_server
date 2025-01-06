@@ -7,6 +7,7 @@ const admins=require('./models/admins');
 const dashboard=require('./models/dashboard');
 const quiz = require('./models/quizes');
 
+app.use(cors());
 app.use(express.json());
 
 app.get('/',(req,res)=>{
